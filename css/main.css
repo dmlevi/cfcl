@@ -1,0 +1,467 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'ProximaNova';
+	src:url('../fonts/ProximaNova.eot');
+	src:url('../fonts/ProximaNova.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova.svg#ProximaNova') format('svg'),
+		url('../fonts/ProximaNova.woff') format('woff'),
+		url('../fonts/ProximaNova.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: url(../images/pattern-grid.jpg);
+	color: #454545;
+}
+
+/*button*/
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: 1.5em;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 50px 160px;
+	display: inline-block;
+	margin: 30px 60px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-1 {
+	border: 3px solid rgb(216, 0, 0);
+	color: rgb(216, 0, 0);
+}
+
+/* Button 1b */
+.btn-1b:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: rgb(216, 0, 0);
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+	color: #fff;
+}
+
+.btn-1b:hover:after,
+.btn-1b:active:after {
+	height: 100%;
+}
+
+
+/* Effect 15: scale down, reveal */
+.navbar a {
+	color: rgba(0,0,0,0.2);
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.navbar a::before {
+	color: #fff;
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.navbar a:hover::before,
+.navbar a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+
+.navbar-nav>.active>a {
+	background-color: rgba(216, 0, 0,.5);
+}
+
+.navbar {
+	background: rgba(0,0,0,.5);
+	font-family: 'ProximaNova', normal;
+}
+
+
+.navbar h1, .navbar img {
+	float: left;
+	color: #fff;
+	font-weight: 200;
+	margin: 10px;
+}
+
+.navbar-nav {
+	padding: 10px;
+}
+
+.slider {
+	height: 600px;
+	width: 100%;
+}
+
+h2 {
+	font-size: 5em;
+	font-weight: 300;
+	color: rgb(216, 0, 0);
+	text-shadow: 0 2px 0 rgba(255,255,255, 0.9);
+	margin: 0 auto;
+	text-align: center;
+}
+
+h2#home {
+color: white;
+  width: 100%;
+  height: 20%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-size: 7em;
+  text-align: center;
+  font-weight: 700;
+}
+
+ p {
+font-size: 1.5em;
+line-height: 1.2em;
+font-weight: 300;
+text-shadow: 0 2px 0 rgba(255,255,255, 0.9);
+}
+
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/*Signup*/
+
+
+section#sign-up {
+	margin-top: 80px;
+	height: 600px;
+	text-align: center;
+}
+
+section#sign-up p {
+	margin: 20px 0;
+}
+section#sign-up img {
+	width: 100%;
+}
+
+/*section#quotes {
+	background: #080911;
+
+}
+*/
+/*carousel*/
+
+
+#carousel {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: 20px auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*Schedule*/
+
+table {
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight:lighter;
+    text-align:center;
+    background: rgba(216, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+}
+
+thead tr th {
+	width: 10%;
+}
+
+td, th {
+    border:1px solid #c6c9cc;
+    padding:12px;
+}
+
+tbody tr:nth-child(even) td {
+    background-color:#e8eae9;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color:white;
+}
+
+span {
+    display:block;
+    color:#8c8c8c;
+    font-size:80%;
+}
+
+
+section#about {
+		background-image: url(../images/bg.png);
+	padding-bottom: 50px;
+}
+
+section#about h2 {
+	margin: 50px 0;
+}
+/*-----------------------------------------------------
+-------------       Coaches         ------------
+-----------------------------------------------------*/
+
+
+section#team img {
+	width: 100%;
+}
+
+section#team {
+	clear: both;
+	margin-top: 300px;
+}
+
+section#team h2 {
+	margin: 50px 0;
+}
+
+
+
+/*-----------------------------------------------------
+-------------       Schedule         ------------
+-----------------------------------------------------*/
+section#schedule {
+	margin-top: 550px;
+	height: 600px;
+}
+
+section#schedule h2 {
+	margin: 50px 0;
+}
+
+
+
+
+section#schedule h2 {
+	margin: 50px 0;
+}
+
+
+section#contact {
+
+}
+
+section#contact h2 {
+	margin: 50px 0;
+}
+
+/*-----------------------------------------------------
+-------------       Pricing         ------------
+-----------------------------------------------------*/
+
+section#pricePlans {
+	margin-top: 300px;
+
+}
+
+section#pricePlans h2 {
+	margin: 10px 0;
+}
+
+
+
+#plans,#plans ul,#plans ul li {
+	margin: 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#pricePlans:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#pricePlans {
+	zoom: 1;
+}
+
+#pricePlans {
+	max-width: 69em;
+	margin: 0 auto;
+}
+
+#pricePlans #plans .plan {
+	background: rgba(255,255,255,.8);
+	float: left;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.planContainer .title h2 {
+	font-size: 1.5em;
+	font-weight: 200;
+	color: #3e4f6a;
+	margin: 0;
+	padding: .6em 0;
+}
+
+.planContainer .title h2.bestPlanTitle {
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+}
+
+
+.planContainer .price p {
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	font-size: 1.4em;
+	font-weight: 200;
+	height: 2.6em;
+	line-height: 2.6em;
+	margin: 0 0 1em;
+}
+
+.planContainer .price p.bestPlanPrice {
+	background: rgba(216, 0, 0,.8);
+}
+
+
+
+.planContainer .options {
+	margin-top: 10em;
+}
+
+.planContainer .options li {
+	font-weight: 300;
+	color: #364762;
+	line-height: 2.5;
+	font-size: 1.2em;
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+#pricePlans #plans .plan {
+	width: 49%;
+	margin: 0 2% 20px 0;
+}
+
+#pricePlans #plans > li:nth-child(2n) {
+	margin-right: 0;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+#pricePlans #plans .plan {
+	width: 49%;
+	margin: 0 2% 20px 0;
+}
+
+#pricePlans #plans > li:nth-child(2n) {
+	margin-right: 0;
+}
+
+}
+
+@media screen and (min-width: 1025px) {
+
+#pricePlans {
+	margin: 2em auto;
+}
+
+#pricePlans #plans .plan {
+	width: 24%;
+	margin: 0 1.33% 20px 0;
+
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+#pricePlans #plans > li:last-child {
+	margin-right: 0;
+}
+
+#pricePlans #plans .plan:hover {
+	-webkit-transform: scale(1.04);
+	   -moz-transform: scale(1.04);
+	    -ms-transform: scale(1.04);
+	     -o-transform: scale(1.04);
+	        transform: scale(1.04);
+}
+
+.planContainer .button a {
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+.planContainer .button a:hover {
+	background: #3e4f6a;
+	color: #fff;
+}
+
+.planContainer .button a.bestPlanButton:hover {
+	background: #ff9c70;
+	border: 2px solid #ff9c70;
+}
+
+}
